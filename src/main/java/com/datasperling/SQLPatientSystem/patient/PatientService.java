@@ -1,15 +1,14 @@
 package com.datasperling.SQLPatientSystem.patient;
 
-import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.stereotype.Service;
 
 import java.time.LocalDate;
 import java.time.Month;
 import java.util.List;
 
+@Service
 public class PatientService {
 
-    // want this to come from database
-    @GetMapping
     public List<Patient> getPatients() {
         return List.of(
                 new Patient(

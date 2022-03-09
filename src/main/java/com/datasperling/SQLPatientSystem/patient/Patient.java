@@ -1,8 +1,22 @@
 package com.datasperling.SQLPatientSystem.patient;
 
+import javax.persistence.*;
 import java.time.LocalDate;
 
+@Entity
+@Table
 public class Patient {
+    @Id
+    @SequenceGenerator(
+            name = "patient_sequence",
+            sequenceName = "patient_sequence",
+            allocationSize = 1
+
+    )
+    @GeneratedValue(
+            strategy = GenerationType.SEQUENCE,
+            generator = "patient_sequence"
+    )
     private Long id;
     private String firstName;
     private String secondName;
