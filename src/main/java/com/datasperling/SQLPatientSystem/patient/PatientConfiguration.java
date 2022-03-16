@@ -19,8 +19,9 @@ public class PatientConfiguration {
                         null,
                         "Smith",
                         "FEMALE",
+
                         LocalDate.of(2000, Month.JANUARY, 5),
-                        "15 winchester av",
+                        "15 Winchester Av.",
                         null,
                         null,
                         false
@@ -31,8 +32,9 @@ public class PatientConfiguration {
                         null,
                         "Müller",
                         "MALE",
+
                         LocalDate.of(1976, Month.OCTOBER, 19),
-                        "Bahnhoffplatz 436",
+                        "Bahnhof Straße 436",
                         "50134",
                         "Sulfonamide",
                         true

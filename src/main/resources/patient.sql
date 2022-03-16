@@ -1,4 +1,4 @@
-create table patient (
+CREATE TABLE patient (
 	first_name VARCHAR(50) NOT NULL,
 	middle_name VARCHAR(50),
 	last_name VARCHAR(50) NOT NULL,

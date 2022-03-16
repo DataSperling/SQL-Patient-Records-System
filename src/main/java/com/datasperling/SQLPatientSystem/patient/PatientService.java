@@ -20,4 +20,9 @@ public class PatientService {
     public List<Patient> getPatients() {
         return patientRepository.findAll();
     }
+
+    public void addPatient(Patient patient) {
+        System.out.println(patient);
+
+    }
 }

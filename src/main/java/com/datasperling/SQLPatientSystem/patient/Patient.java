@@ -2,6 +2,7 @@ package com.datasperling.SQLPatientSystem.patient;
 
 import javax.persistence.*;
 import java.time.LocalDate;
+import java.time.Period;
 
 @Entity
 @Table
@@ -22,6 +23,8 @@ public class Patient {
     private String secondName;
     private String lastName;
     private String gender;
+    @Transient
+    private int age;
     private LocalDate dateOfBirth;
     private String address;
     private String postcode;
@@ -113,6 +116,12 @@ public class Patient {
         this.gender = gender;
     }
 
+    public int getAge() {
+        return Period.between(this.dateOfBirth, LocalDate.now()).getYears();
+    }
+
+    public void setAge(int age) { this.age = age;}
+
     public LocalDate getDateOfBirth() {
         return dateOfBirth;
     }
@@ -161,6 +170,7 @@ public class Patient {
                 ", secondName='" + secondName + '\'' +
                 ", lastName='" + lastName + '\'' +
                 ", gender='" + gender + '\'' +
+                ", gender='" + age + '\'' +
                 ", dateOfBirth=" + dateOfBirth +
                 ", address='" + address + '\'' +
                 ", postcode='" + postcode + '\'' +

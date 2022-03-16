@@ -1,9 +1,7 @@
 package com.datasperling.SQLPatientSystem.patient;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
@@ -11,9 +9,9 @@ import java.util.List;
 @RequestMapping(path = "api/v1/patient")
 public class PatientController {
 
-        private final PatientService patientService;
+    private final PatientService patientService;
 
-        @Autowired
+    @Autowired
     public PatientController(PatientService patientService) {
         this.patientService = patientService;
     }
@@ -21,5 +19,10 @@ public class PatientController {
     @GetMapping
     public List<Patient> getPatients() {
         return patientService.getPatients();
+    }
+
+    @PostMapping
+    public void registerPatient(@RequestBody Patient patient) {
+        patientService.addPatient(patient);
     }
 }
