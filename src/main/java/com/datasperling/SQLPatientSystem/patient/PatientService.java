@@ -6,6 +6,7 @@ import org.springframework.stereotype.Service;
 import java.time.LocalDate;
 import java.time.Month;
 import java.util.List;
+import java.util.Optional;
 
 @Service
 public class PatientService {
@@ -22,6 +23,14 @@ public class PatientService {
     }
 
     public void addPatient(Patient patient) {
+        Optional<Patient> patientOptional = patientRepository.findPatientByLastName(patient.getLastName());
+
+        if (patientOptional.isPresent()) {
+            throw new IllegalStateException("Error: patient already exists in database");
+        }
+        patientRepository.save(patient);
+
+
         System.out.println(patient);
 
     }
