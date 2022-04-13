@@ -4,7 +4,7 @@ The below picture shows an overview of this software application. It is an n-tie
 patient records system using PostgreSQL as the back-end and excepts POST, PUT and DELETE
 requests over REST. The pplcation is stratifed into layers for architypal classes, business logic and database access and is built using Spring-data-JPA. I use these repositories for learning so I apologise in advance if the description is too verbose.
 
-![overView](https://user-images.githubusercontent.com/78074172/154043026-7f226206-718a-4f60-acf6-df562984c509.svg)
+[overView.odg](https://github.com/DataSperling/SQL-Patient-Records-System/files/8481553/overView.odg)
 
 The aim of this repo is to learn about Spring-data-JPA and how it integrates with PostgreSQL. It
 is adapted from a an application by Amigoscode aka Nelson.
