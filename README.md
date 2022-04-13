@@ -1,10 +1,8 @@
 ## PostgreSQL Patient Records System
 
-The below picture shows an overview of this software application. It is an n-tier web-based
-patient records system using PostgreSQL as the back-end and excepts POST, PUT and DELETE
-requests over REST. The pplcation is stratifed into layers for architypal classes, business logic and database access and is built using Spring-data-JPA. I use these repositories for learning so I apologise in advance if the description is too verbose.
+The below picture shows an overview of this software application. It is an n-tier web-based patient records system using PostgreSQL as the back-end and excepts POST, PUT and DELETE requests over REST. The application is stratified into layers for archetypal classes, business logic and database access and is built using Spring-data-JPA. I use these repositories for learning so I apologise in advance if the description is too verbose.
 
-[overView.odg](https://github.com/DataSperling/SQL-Patient-Records-System/files/8481553/overView.odg)
+![overView](https://user-images.githubusercontent.com/78074172/163184848-69817969-279f-44fc-a908-8886fa627332.png)
 
 The aim of this repo is to learn about Spring-data-JPA and how it integrates with PostgreSQL. It
 is adapted from a an application by Amigoscode aka Nelson.
@@ -29,11 +27,11 @@ The generated SQL file is imported directly into a local PostgreSQL instance aft
 appropriate user and database:
 
 ```
-// create databse
+// create database
 CREATE DATABASE patient_records;
 
 
-// connect to databse
+// connect to database
 \c patient_records
 
 
