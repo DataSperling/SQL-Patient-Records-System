@@ -93,10 +93,10 @@ formatted correctly as they must match the Patient.java class archetype. Below i
 }
 ```
 
-And here is the corresponding Patinet.java class we must match:
+And here is the corresponding Patient.java class we must match:
 
 ```
-// Patinet.java class for POST request
+// Patient.java class for POST request
 public Patient(Long id,
                    String firstName,
                    String secondName,
