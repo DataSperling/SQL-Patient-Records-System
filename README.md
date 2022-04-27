@@ -2,7 +2,7 @@
 
 The below picture shows an overview of this software application. It is an n-tier web-based patient records system using PostgreSQL as the back-end and excepts POST, PUT and DELETE requests over REST. The application is stratified into layers for archetypal classes, business logic and database access and is built using Spring-data-JPA. I use these repositories for learning so I apologise in advance if the description is too verbose.
 
-![overView](https://user-images.githubusercontent.com/78074172/163184848-69817969-279f-44fc-a908-8886fa627332.png)
+![overView](https://user-images.githubusercontent.com/78074172/165515289-df484726-d788-4191-ac8e-e3e4b38ae2d3.png)
 
 The aim of this repo is to learn about Spring-data-JPA and how it integrates with PostgreSQL. It
 is adapted from a an application by Amigoscode aka Nelson.
